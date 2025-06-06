@@ -1,0 +1,50 @@
+CREATE DATABASE ControlGym;
+GO
+
+CREATE TABLE Usuarios(
+	UsuarioID INT PRIMARY KEY,
+	Nombre NVARCHAR(100) NOT NULL,
+	Email NVARCHAR(100),
+	Telefono NVARCHAR(100),
+	FechaVencimientoMembresia DATETIME NOT NULL
+);
+
+CREATE TABLE Entrenadores(
+	EntrenadorID INT PRIMARY KEY,
+	Nombre NVARCHAR(100),
+	Especialidad NVARCHAR(100),
+	Disponibilidad BIT 
+);
+
+CREATE TABLE Clases(
+	ClaseID INT PRIMARY KEY IDENTITY (1,1),
+	NombreClase NVARCHAR(100) NOT NULL,
+	FechaHoraInicio DATETIME,
+	FechaHoraFin DATETIME,
+	Duracion INT,
+	CapacidadMaxima INT,
+	EntrenadorID INT,
+	FOREIGN KEY (EntrenadorID) REFERENCES Entrenadores(EntrenadorID)
+);
+
+CREATE TABLE Reservas(
+	ReservaID INT PRIMARY KEY IDENTITY(1,1),
+	UsuarioID INT,
+	ClaseID INT,
+	FechaReserva DATETIME,
+	Estado BIT, --1 igual a activo y 0 igual a cancelado
+	FechaCancelacion DATETIME
+
+	FOREIGN KEY (UsuarioID) REFERENCES Usuarios(UsuarioID),
+	FOREIGN KEY (ClaseID) REFERENCES Clases(ClaseID)
+);
+
+CREATE TABLE Accesos(
+	AccesoID INT PRIMARY KEY IDENTITY(1,1),
+	UsuarioID INT,
+	FechaAcceso DATETIME,
+	ClaseID INT,
+	EstadoAcceso BIT, --1 para permitido y 0 denegado
+	FOREIGN KEY (UsuarioID) REFERENCES Usuarios(UsuarioID),
+	FOREIGN KEY (ClaseID) REFERENCES Clases(ClaseID)
+);
