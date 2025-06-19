@@ -64,5 +64,49 @@ namespace ControlGYM.Repositorios
                 return lista_usuarios;
             }
         }
+        public void ActualizarDatosUsuario (Usuarios usuario)
+        {
+            using (SqlConnection conexion = ConexionBD.ObtenerInstancia().CrearConexion())
+            {
+                using (SqlCommand cmd = new SqlCommand ("UPDATE Usuarios SET Nombre = @Nombre, Email = @Email, Telefono = @Telefono, TipoMembresia = @TipoMembresia WHERE UsuarioID = @UsuarioID", conexion))
+                {
+                    cmd.Parameters.AddWithValue("@UsuarioID", usuario.UsuarioID);
+                    cmd.Parameters.AddWithValue("@Nombre", usuario.Nombre);
+                    cmd.Parameters.AddWithValue("@Email", usuario.Email);
+                    cmd.Parameters.AddWithValue("@Telefono", usuario.Telefono);
+                    cmd.Parameters.AddWithValue("@TipoMembresia", usuario.TipoMembresia.ToString());
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        public void ActualizarMembresiaUsuario (Usuarios usuario)
+        {
+            using (SqlConnection conexion = ConexionBD.ObtenerInstancia().CrearConexion())
+            {
+                using (SqlCommand cmd = new SqlCommand("UPDATE Usuarios SET FechaVencimientoMembresia = @FechaMembresia", conexion))
+                {
+                    DateTime fecha_actual = DateTime.Now;
+                    DateTime fecha_vencimiento =  fecha_actual.AddMonths(1);
+                    cmd.Parameters.AddWithValue("@FechaMembresia", fecha_vencimiento);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void EliminarUsuario(int usuarioID)
+        {
+            using (SqlConnection conexion = ConexionBD.ObtenerInstancia().CrearConexion())
+            {
+                using (SqlCommand cmd =  new SqlCommand("DELETE Usuarios WHERE UsuarioID = @UsuarioID", conexion))
+                {
+                    cmd.Parameters.AddWithValue("@UsuarioID", usuarioID);
+                    int filas_afectadas = cmd.ExecuteNonQuery();
+                    if (filas_afectadas == 0)
+                    {
+                        throw new Exception("No se encontró el usuario con el ID especificado.");
+                    }
+                }
+            }
+        }
     }
 }
