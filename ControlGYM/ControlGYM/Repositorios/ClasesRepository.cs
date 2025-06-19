@@ -12,7 +12,7 @@ namespace ControlGYM.Repositorios
             {
                 using (SqlCommand cmd = new SqlCommand("INSERT INTO Clases (Nombre, FechaHoraInicio, FechaHoraFin, Duracion, CapacidadMaxima, EntrenadorID) VALUES (@Nombre, @FechaHoraInicio, @FechaHoraFin, @Duracion, @CapacidadMaxima, @EntrenadorID)", conexion))
                 {
-                    cmd.Parameters.AddWithValue("@Nombre", clase.Nombre);
+                    cmd.Parameters.AddWithValue("@Nombre", clase.Nombre.ToString());
                     cmd.Parameters.AddWithValue("@FechaHoraInicio", clase.FechaHoraInicio);
                     cmd.Parameters.AddWithValue("@FechaHoraFin", clase.FechaHoraFin);
                     cmd.Parameters.AddWithValue("@Duracion", clase.Duracion);
@@ -36,7 +36,7 @@ namespace ControlGYM.Repositorios
                             lista_clases.Add(new Clases
                             {
                                 ClaseID = reader.GetInt32(0),
-                                Nombre = reader.GetString(1),
+                                Nombre = (NombreClase)Enum.Parse(typeof(NombreClase), reader.GetString(1)),
                                 FechaHoraInicio = reader.GetDateTime(2),
                                 FechaHoraFin = reader.GetDateTime(3),
                                 Duracion = reader.GetInt32(4),
@@ -57,7 +57,7 @@ namespace ControlGYM.Repositorios
                 using (SqlCommand cmd = new SqlCommand("UPDATE Clases SET NombreClase = @Nombre, FechaHoraInicio =@FechaHoraInicio, FechaHoraFin = @FechaHoraFin, Duracion = @Duracion, CapacidadMaxima = @CapacidadMaxima WHERE ClaseID = @ClaseID", conexion))
                 {
                     cmd.Parameters.AddWithValue("@ClaseID", clase.ClaseID);
-                    cmd.Parameters.AddWithValue("@Nombre", clase.Nombre);
+                    cmd.Parameters.AddWithValue("@Nombre", clase.Nombre.ToString());
                     cmd.Parameters.AddWithValue("@FechaHoraInicio", clase.FechaHoraInicio);
                     cmd.Parameters.AddWithValue("@FechaHoraFin", clase.FechaHoraFin);
                     cmd.Parameters.AddWithValue("@Duracion", clase.Duracion);
