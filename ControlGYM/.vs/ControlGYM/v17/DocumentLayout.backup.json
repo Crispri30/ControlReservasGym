@@ -11,16 +11,16 @@
       "RelativeMoniker": "D:0:0:{AFBF24D5-4825-40C4-9E85-6F9F6BF9B755}|ControlGYM\\ControlGYM.csproj|solutionrelative:controlgym\\repositorios\\entrenadorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFBF24D5-4825-40C4-9E85-6F9F6BF9B755}|ControlGYM\\ControlGYM.csproj|c:\\users\\user\\onedrive\\escritorio\\controlreservasgym\\controlgym\\controlgym\\modelos\\clases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFBF24D5-4825-40C4-9E85-6F9F6BF9B755}|ControlGYM\\ControlGYM.csproj|solutionrelative:controlgym\\modelos\\clases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AFBF24D5-4825-40C4-9E85-6F9F6BF9B755}|ControlGYM\\ControlGYM.csproj|c:\\users\\user\\onedrive\\escritorio\\controlreservasgym\\controlgym\\controlgym\\repositorios\\usuariosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFBF24D5-4825-40C4-9E85-6F9F6BF9B755}|ControlGYM\\ControlGYM.csproj|solutionrelative:controlgym\\repositorios\\usuariosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFBF24D5-4825-40C4-9E85-6F9F6BF9B755}|ControlGYM\\ControlGYM.csproj|c:\\users\\user\\onedrive\\escritorio\\controlreservasgym\\controlgym\\controlgym\\modelos\\entrenadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFBF24D5-4825-40C4-9E85-6F9F6BF9B755}|ControlGYM\\ControlGYM.csproj|solutionrelative:controlgym\\modelos\\entrenadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFBF24D5-4825-40C4-9E85-6F9F6BF9B755}|ControlGYM\\ControlGYM.csproj|c:\\users\\user\\onedrive\\escritorio\\controlreservasgym\\controlgym\\controlgym\\repositorios\\usuariosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFBF24D5-4825-40C4-9E85-6F9F6BF9B755}|ControlGYM\\ControlGYM.csproj|solutionrelative:controlgym\\repositorios\\usuariosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AFBF24D5-4825-40C4-9E85-6F9F6BF9B755}|ControlGYM\\ControlGYM.csproj|c:\\users\\user\\onedrive\\escritorio\\controlreservasgym\\controlgym\\controlgym\\modelos\\clases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFBF24D5-4825-40C4-9E85-6F9F6BF9B755}|ControlGYM\\ControlGYM.csproj|solutionrelative:controlgym\\modelos\\clases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFBF24D5-4825-40C4-9E85-6F9F6BF9B755}|ControlGYM\\ControlGYM.csproj|c:\\users\\user\\onedrive\\escritorio\\controlreservasgym\\controlgym\\controlgym\\modelos\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -48,27 +48,23 @@
               "RelativeDocumentMoniker": "ControlGYM\\Repositorios\\ClasesRepository.cs",
               "ToolTip": "C:\\Users\\user\\OneDrive\\Escritorio\\ControlReservasGym\\ControlGYM\\ControlGYM\\Repositorios\\ClasesRepository.cs",
               "RelativeToolTip": "ControlGYM\\Repositorios\\ClasesRepository.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAUwDYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T15:19:58.291Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Clases.cs",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Escritorio\\ControlReservasGym\\ControlGYM\\ControlGYM\\Modelos\\Clases.cs",
               "RelativeDocumentMoniker": "ControlGYM\\Modelos\\Clases.cs",
               "ToolTip": "C:\\Users\\user\\OneDrive\\Escritorio\\ControlReservasGym\\ControlGYM\\ControlGYM\\Modelos\\Clases.cs",
               "RelativeToolTip": "ControlGYM\\Modelos\\Clases.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T15:15:23.034Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             },
             {
               "$type": "Document",
@@ -78,7 +74,7 @@
               "RelativeDocumentMoniker": "ControlGYM\\Repositorios\\EntrenadorRepository.cs",
               "ToolTip": "C:\\Users\\user\\OneDrive\\Escritorio\\ControlReservasGym\\ControlGYM\\ControlGYM\\Repositorios\\EntrenadorRepository.cs",
               "RelativeToolTip": "ControlGYM\\Repositorios\\EntrenadorRepository.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAwwCwAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAwwFoAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-17T22:28:28.974Z",
               "EditorCaption": ""
@@ -98,16 +94,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "UsuariosRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Escritorio\\ControlReservasGym\\ControlGYM\\ControlGYM\\Repositorios\\UsuariosRepository.cs",
               "RelativeDocumentMoniker": "ControlGYM\\Repositorios\\UsuariosRepository.cs",
               "ToolTip": "C:\\Users\\user\\OneDrive\\Escritorio\\ControlReservasGym\\ControlGYM\\ControlGYM\\Repositorios\\UsuariosRepository.cs",
               "RelativeToolTip": "ControlGYM\\Repositorios\\UsuariosRepository.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwGYAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAwwGYAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-07T20:42:02.706Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             },
             {
               "$type": "Document",
@@ -119,8 +119,7 @@
               "RelativeToolTip": "ControlGYM\\Modelos\\Usuarios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T20:38:40.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T20:38:40.328Z"
             },
             {
               "$type": "Document",

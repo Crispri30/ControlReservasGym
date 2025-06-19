@@ -103,7 +103,7 @@ namespace ControlGYM.Repositorios
                     int filas_afectadas = cmd.ExecuteNonQuery();
                     if (filas_afectadas == 0)
                     {
-                        throw new Exception("No se encontró el usuario con el ID especificado.");
+                        throw new Exception($"No se encontró el usuario con el ID especificado {usuarioID}");
                     }
                 }
             }

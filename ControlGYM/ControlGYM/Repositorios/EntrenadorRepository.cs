@@ -91,7 +91,7 @@ namespace ControlGYM.Repositorios
                     int filasafectadas = cmd.ExecuteNonQuery();
                     if (filasafectadas == 0)
                     {
-                        throw new Exception("No se encontró un entrenador con el ID especificado.");
+                        throw new Exception($"No se encontró un entrenador con el ID especificado {entrenadorID}");
                     }
                 }
             }

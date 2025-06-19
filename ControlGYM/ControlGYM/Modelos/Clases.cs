@@ -2,6 +2,7 @@
 {
     public class Clases
     {
+        public int ClaseID { get; set; } // ID único de la clase
         public string Nombre { get; set; }
         public DateTime FechaHoraInicio { get; set; }
         public DateTime FechaHoraFin { get; set; }
