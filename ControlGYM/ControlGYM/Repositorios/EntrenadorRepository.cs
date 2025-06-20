@@ -67,6 +67,31 @@ namespace ControlGYM.Repositorios
             }
         }
 
+        public List<Entrenadores> ObtenerEntrenadoresEspecialidadDisponibilidad(Especialidad especialidad)
+        {
+            var lista_entrenadores = new List<Entrenadores>();
+            using (SqlConnection conexion = ConexionBD.ObtenerInstancia().CrearConexion())
+            {
+                using (SqlCommand cmd = new SqlCommand("SELECT EntrenadorID, Nombre, Especialidad, Disponibilidad FROM Entrenadores WHERE Especialidad = @Especialidad AND Disponibilidad = 1", conexion))
+                {
+                    cmd.Parameters.AddWithValue("@Especialidad", especialidad.ToString());
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            lista_entrenadores.Add(new Entrenadores
+                            {
+                               EntrenadorID = reader.GetInt32(0),
+                               Nombre = reader.GetString(1),
+                               Especialidad = (Especialidad)Enum.Parse(typeof(Especialidad), reader.GetString(2)),
+                               Disponibilidad = reader.GetBoolean(3)
+                            });
+                        }
+                    }
+                }
+                return lista_entrenadores;
+            }
+        }
         public void ActualizarEntrenador(Entrenadores entrenador)
         {
             using (SqlConnection conexion  = ConexionBD.ObtenerInstancia().CrearConexion())

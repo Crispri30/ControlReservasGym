@@ -36,7 +36,9 @@ namespace ControlGYM.Utilidades
 
         public SqlConnection CrearConexion()
         {
-            return new SqlConnection(connectionstring); //Crear y devolver una nueva conexión
+            var conexion = new SqlConnection(connectionstring); //Crear y devolver una nueva conexión
+            conexion.Open(); //Abrir la conexión
+            return conexion;
         }
     }
 }
